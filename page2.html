@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is page 2</title>
+  </head>
+
+  <body>
+    anything
+    <br />
+    <a href="./practice.html">Go to practice page</a><br /><br /><br />
+
+    <img src="./car.jpeg" alt="this is a car image" width="200" height="200" />
+
+    <audio src="./music.mp3" autoplay controls></audio> <br /><br /><br />
+    <video src="./video.mp4" controls width="" height=""></video>
+    <br /><br /><br />
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/-rFfYVtLnMA?si=lrMfOJQPLqP92VHJ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- screen readers -->
+    <!-- screen readers -->
+
+    <!-- tables -->
+    <!-- table -->
+    <!-- tr => table row -->
+    <!-- th => table header -->
+
+    <table border="1">
+      <caption>
+        My students data
+      </caption>
+      <tr>
+        <th>Names</th>
+        <th>Inst.</th>
+        <th>Cohort</th>
+        <th>Track</th>
+      </tr>
+
+      <tr>
+        <td colspan="2">Evi</td>
+        <!-- <td>Axia</td> -->
+        <td>8</td>
+        <td>FE</td>
+      </tr>
+
+      <tr>
+        <td>Ayishat</td>
+        <td>Axia</td>
+        <td>8</td>
+        <td>DA</td>
+      </tr>
+
+      <tr>
+        <td>Samson</td>
+        <td>Axia</td>
+        <td>7</td>
+        <td>BE</td>
+      </tr>
+
+      <tr>
+        <td>Israel</td>
+        <td>Axia</td>
+        <td>8</td>
+        <td>Devops</td>
+      </tr>
+    </table>
+    <br /><br /><br />
+
+    <table border="1">
+      <caption>
+        Spans
+      </caption>
+
+      <tr>
+        <th>Names</th>
+        <th>Inst.</th>
+        <th colspan="2">Cohort</th>
+        <!-- <th>Track</th> -->
+      </tr>
+
+      <tr>
+        <td rowspan="2">Evi</td>
+        <td>Axia</td>
+        <td>8</td>
+        <td>FE</td>
+      </tr>
+
+      <tr>
+        <!-- <td>Ayishat</td> -->
+        <td>Axia</td>
+        <td rowspan="2">8</td>
+        <td>DA</td>
+      </tr>
+
+      <tr>
+        <td>Samson</td>
+        <td>Axia</td>
+        <!-- <td>7</td> -->
+        <td rowspan="2">BE</td>
+      </tr>
+
+      <tr>
+        <td>Israel</td>
+        <td>Axia</td>
+        <td>8</td>
+        <!-- <td>Devops</td> -->
+      </tr>
+    </table>
+
+    <!-- POST GET PUT PATCH DELETE -->
+
+    <!-- https: -->
+    <!-- text
+      password
+      email
+      number
+      checkbox
+      radio
+      date
+      time
+      date-time-local
+      month
+      url
+      search
+      tel
+      col
+      range
+      file -->
+
+    <h1>forms</h1>
+    <form action="https://api.godsgift.com" method="patch">
+      <label for="name">Firstname:</label>
+      <input
+        id="name"
+        type="text"
+        required
+        placeholder="Enter your first name"
+      /><br /><br />
+
+      <label for="lastname">LastName</label>
+      <input
+        id="lastname"
+        type="text"
+        required
+        placeholder="Enter your last name"
+      /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password"
+      /><br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        disabled
+        id="email"
+        type="email"
+        placeholder="Enter your Email"
+      /><br /><br />
+
+      <label for="age">Age:</label>
+      <input id="age" type="number" placeholder="Enter your age" /><br /><br />
+
+      <h5>Qual.</h5>
+      <label for="bsc">BSC</label>
+      <input id="bsc" type="checkbox" value="Bsc" checked /><br />
+
+      <label for="hnd">HND</label>
+      <input id="hnd" type="checkbox" value="hnd" /><br />
+
+      <label for="nd">ND</label>
+      <input id="nd" type="checkbox" value="hnd" /><br /><br />
+
+      <h5>Radio button</h5>
+
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="male" />
+
+      <label for="female">Female</label>
+      <input
+        type="radio"
+        id="female"
+        name="gender"
+        value="female"
+      /><br /><br />
+
+      <label for="date">Date</label>
+      <input type="date" id="date" />
+
+      <label for="dateTime">DateTime</label>
+      <input type="datetime-local" id="dateTime" />
+
+      <label for="month">month</label>
+      <input type="month" id="month" /><br /><br />
+
+      <label for="upload">Upload</label>
+      <input type="file" id="file" /><br /><br />
+
+      <select name="cars" id="cars">
+        <option value="default">Select an option</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        <option value="toyota">Toyota</option></select
+      ><br /><br />
+
+      <textarea
+        name=""
+        id=""
+        rows="30"
+        cols="50"
+        minlength="50"
+        maxlength="100"
+      ></textarea
+      ><br /><br />
+
+      <input type="reset" value="reset" /><br /><br />
+      <button type="reset" disabled>reset all fields</button><br /><br />
+      <button type="submit">Submit</button><br /><br />
+    </form>
+  </body>
+</html>
